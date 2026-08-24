@@ -3,17 +3,28 @@ import React from 'react'
 import { View , Text, StyleSheet} from 'react-native'
 import UserCard from '../components/Tuan1/UserCard'
 import Counter from '../components/Tuan1/Counter'
+import TodoList from '@/components/Tuan1/TodoList'
 
-  
+  const todos=[
+    { id: "1", title: "Học React Native" },
+  { id: "2", title: "Học TypeScript" },
+  { id: "3", title: "Làm bài tập" }
+  ]
 
 function index() {
   return (
     <View style={styles.container}>
-      <Text>Bài 1: </Text> 
+      <h3>Bài 1: </h3> 
       <UserCard name="TheAnh" age={21} isAdmin={true}></UserCard>
       <br />
-      <Text>Bài 2: </Text>
+
+      <h3>Bài 2: </h3>
       <Counter></Counter>
+      <br />
+
+      <h3>Bài 3: </h3>
+      <TodoList props={todos} ></TodoList>
+
     </View>
   )
 }
