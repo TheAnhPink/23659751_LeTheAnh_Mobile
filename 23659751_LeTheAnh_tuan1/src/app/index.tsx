@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { View , Text, StyleSheet} from 'react-native'
+import { View , Text, StyleSheet, ScrollView} from 'react-native'
 import UserCard from '../components/Tuan1/UserCard'
 import Counter from '../components/Tuan1/Counter'
 import TodoList from '@/components/Tuan1/TodoList'
@@ -8,6 +8,7 @@ import MyButton from '@/components/Tuan1/MyButton'
 import MyTextInput from '@/components/Tuan1/MyTextInput'
 import LoadingContainer from '@/components/Tuan1/LoadingContainer'
 import ChonGioiTinh from '@/components/Tuan1/ChonGioiTinh'
+import Progress from '@/components/Tuan1/Progress'
 
   const todos=[
     { id: "1", title: "Học React Native" },
@@ -17,7 +18,8 @@ import ChonGioiTinh from '@/components/Tuan1/ChonGioiTinh'
 
 function index() {
   return (
-    <View style={styles.container}>
+    <ScrollView >
+      <View style={styles.container}>
       <h4>Bài 1: </h4> 
       <UserCard name="TheAnh" age={21} isAdmin={true}></UserCard>
 
@@ -46,13 +48,16 @@ function index() {
 
       <h4>Bài 7: </h4>
       <ChonGioiTinh></ChonGioiTinh>
+
+      <h4>Bài 8:</h4>
+      <Progress duLieu={-1}></Progress>
     </View>
+    </ScrollView>
   )
 }
 
 const styles= StyleSheet.create({
     container:{
-      height: 678,
       width:400,
       borderWidth: 2,
       borderColor: "black",
