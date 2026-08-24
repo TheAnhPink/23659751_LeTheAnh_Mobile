@@ -8,6 +8,7 @@ function Counter() {
         <Pressable onPress={()=>{count>0? setCount(count-1): setCount(count)}}
                     style={{backgroundColor: "pink",width:100, alignItems: 'center'}}
             >
+              
             <Text>Trừ</Text>
         </Pressable>
         <h2 style={{margin:20}}>{count}</h2>
