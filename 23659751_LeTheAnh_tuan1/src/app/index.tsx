@@ -7,6 +7,7 @@ import TodoList from '@/components/Tuan1/TodoList'
 import MyButton from '@/components/Tuan1/MyButton'
 import MyTextInput from '@/components/Tuan1/MyTextInput'
 import LoadingContainer from '@/components/Tuan1/LoadingContainer'
+import ChonGioiTinh from '@/components/Tuan1/ChonGioiTinh'
 
   const todos=[
     { id: "1", title: "Học React Native" },
@@ -43,6 +44,8 @@ function index() {
       <h4>Bài 6: </h4>
       <LoadingContainer isLoading={true} children="Load xong rồi" ></LoadingContainer>
 
+      <h4>Bài 7: </h4>
+      <ChonGioiTinh></ChonGioiTinh>
     </View>
   )
 }
