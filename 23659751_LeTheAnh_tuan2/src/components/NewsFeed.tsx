@@ -21,9 +21,10 @@ function NewsFeed() {
         <FlatList
         data={dlieu}
         renderItem={({item})=>(
-            <Text>{item.title}</Text>
+            <Text style={{backgroundColor: "green", width: 200, margin: 5}}>{item.title}</Text>
         )}
         keyExtractor={(item)=>(item.id.toString())}
+        
         ></FlatList>
     </View>
   )

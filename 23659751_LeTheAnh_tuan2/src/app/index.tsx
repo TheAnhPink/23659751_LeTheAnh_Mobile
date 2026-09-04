@@ -6,9 +6,11 @@ function index() {
   return (
     <ScrollView style={{margin: 20}}>
       <Text>Nhấn để chuyển đến bài:</Text>
-      <Link href={"/bai1"} style={styles.link}>Bài 1</Link>
+      <Link href={"/bai9"} style={styles.link}>Bài 9</Link>
       <br />
-      <Link href={"/bai2"} style={styles.link}>Bài 2</Link>
+      <Link href={"/bai10"} style={styles.link}>Bài 10</Link>
+      <br />
+      <Link href={"/bai11"} style={styles.link}>Bài 11</Link>
 
     </ScrollView>
   )

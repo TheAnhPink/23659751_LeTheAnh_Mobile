@@ -41,9 +41,7 @@ function UserProfileDetail() {
     },[])
   return (
     <View style={{margin: 10}}>
-        <Link href={"/"} style={{backgroundColor:"pink", width:100, borderColor: "black", borderWidth:1}}>
-        Trang chủ</Link>
-        <br />
+        
         <Text>THông tin user bài 2:</Text>
       <Text>Name: {user?.name}</Text>
       <Text>Email: {user?.email}</Text>
